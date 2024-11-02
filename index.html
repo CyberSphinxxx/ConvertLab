@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConvertLab</title>
+    <title>ConvertLab - File Converter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">ConvertLab</div>
+        <div class="nav-buttons">
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="https://github.com/CyberSphinxxx/ConvertLab" class="github-btn">
+                <i class="fab fa-github"></i>
+                Github Repo
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Free Unlimited File Converter</h1>
+            <p class="subtitle">Convert your files easily without any restrictions</p>
+
+            <div class="dropzone" id="dropzone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>Drop your files here or click to upload</h3>
+            </div>
+
+            <div class="conversion-list" id="conversion-list"></div>
+
+            <button class="convert-btn" id="convert-btn" style="display: none;">
+                Convert Now
+            </button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
